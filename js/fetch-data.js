@@ -13,7 +13,7 @@ export async function fetchProducts(productsUrl) {
 
 export async function fetchCategories() {
     try {
-        const res = await fetch('http://localhost:8080/api/categories');
+        const res = await fetch('https://store-api-fjmh.onrender.com/api/categories');
         const categoriesArray = await res.json();
         createCategories(categoriesArray);
     } catch (error) {

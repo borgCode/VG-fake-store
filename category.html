@@ -82,10 +82,10 @@
     const categoryId = params.get('id');
 
     if (categoryId === 'all') {
-        fetchProducts('http://localhost:8080/api/products');
+        fetchProducts('https://store-api-fjmh.onrender.com/api/products');
     } else if (categoryId) {
         fetchProducts(
-            `http://localhost:8080/api/categories/${categoryId}/products`
+            `https://store-api-fjmh.onrender.com/api/categories/${categoryId}/products`
         );
     }
     fetchCategories();
